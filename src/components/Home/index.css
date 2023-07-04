@@ -1,0 +1,11 @@
+.home-bg-container {
+  background-color: #131313;
+  min-height: 100vh;
+}
+
+.bg-image {
+  width: 100%;
+  height: 427px;
+  flex-shrink: 0;
+  background-size: cover;
+}
