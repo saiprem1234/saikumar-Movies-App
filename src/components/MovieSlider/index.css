@@ -1,0 +1,35 @@
+.thumbnail-image-card {
+  margin-left: 8px;
+}
+
+.thumbnail {
+  width: 80px;
+  height: 140px;
+  padding: 5px;
+  border-radius: 10px;
+  outline: 2px solid #fff;
+  margin-top: 10px;
+}
+.thumbnail:hover {
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.1);
+}
+
+@media screen and (min-width: 768px) {
+  .thumbnail-image-card {
+    margin-left: 22px;
+  }
+  .thumbnail {
+    width: 238px;
+    height: 360px;
+    border-radius: 15px;
+    outline: 2px solid #fff;
+    margin: 20px;
+  }
+  .thumbnail:hover {
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.1);
+  }
+}

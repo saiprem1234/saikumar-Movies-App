@@ -22,7 +22,7 @@ class Header extends Component {
       <>
         <nav className="navbar">
           <div className="navbar-container">
-            <div>
+            <div className="options-container">
               <Link to="/">
                 <img
                   src="https://res.cloudinary.com/dpoyt9wp0/image/upload/v1688382078/Group_7399_p2tymc.svg"
@@ -30,6 +30,18 @@ class Header extends Component {
                   alt="login website logo"
                 />
               </Link>
+              <ul className="options-card">
+                <li>
+                  <Link className="menu-option" to="/">
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <Link className="menu-option" to="/popular">
+                    Popular
+                  </Link>
+                </li>
+              </ul>
             </div>
             <ul className="nav-items-list">
               <li>
@@ -37,7 +49,15 @@ class Header extends Component {
                   <HiOutlineSearch size={20} />
                 </button>
               </li>
-              <li>
+              <li className="avatar-container">
+                <Link to="/account">
+                  <img
+                    src="https://res.cloudinary.com/dc2b69ycq/image/upload/v1669785109/Movies%20App/Vector_Avatar1_hiwft7.png"
+                    alt="profile"
+                  />
+                </Link>
+              </li>
+              <li className="hamburger-container">
                 <button
                   onClick={this.onToggleMenu}
                   className="hamburger-button"
