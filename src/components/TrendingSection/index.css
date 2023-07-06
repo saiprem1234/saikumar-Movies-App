@@ -5,7 +5,6 @@
 }
 .trending-loader-container {
   width: 80%;
-  width: 296px;
   height: 90px;
   flex-shrink: 0;
   border-radius: 4px;
@@ -14,6 +13,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .trending-loader-card {
+    margin-top: 20px;
+  }
+  .trending-loader-container {
+    height: 170px;
+    border-radius: 8px;
+  }
 }
 .trending-failure-image {
   width: 16px;

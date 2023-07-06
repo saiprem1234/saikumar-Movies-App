@@ -8,6 +8,19 @@ import './index.css'
 class Header extends Component {
   state = {
     showOptions: false,
+    currentPath: '',
+  }
+
+  componentDidMount() {
+    const path = window.location.pathname
+    this.setState({
+      currentPath: path,
+    })
+  }
+
+  onChangeSearchInput = event => {
+    const {updateSearchInput} = this.props
+    updateSearchInput(event.target.value)
   }
 
   onToggleMenu = () => {
@@ -17,7 +30,8 @@ class Header extends Component {
   }
 
   render() {
-    const {showOptions} = this.state
+    const {showOptions, currentPath} = this.state
+    const {searchInput} = this.props
     return (
       <>
         <nav className="navbar">
@@ -44,11 +58,32 @@ class Header extends Component {
               </ul>
             </div>
             <ul className="nav-items-list">
-              <li>
-                <button className="search-icon-button" type="button">
-                  <HiOutlineSearch size={20} />
-                </button>
-              </li>
+              {currentPath === '/' ? (
+                <li>
+                  <Link to="/search">
+                    <button className="search-icon-button" type="button">
+                      <HiOutlineSearch size={20} />
+                    </button>
+                  </Link>
+                </li>
+              ) : (
+                <li className="search-input-container">
+                  <input
+                    type="search"
+                    placeholder="Search"
+                    className="search-input"
+                    onChange={this.onChangeSearchInput}
+                    value={searchInput}
+                  />
+                  <button
+                    testid="searchButton"
+                    className="search-input-icon-button"
+                    type="button"
+                  >
+                    <HiOutlineSearch className="search-image" size={16} />
+                  </button>
+                </li>
+              )}
               <li className="avatar-container">
                 <Link to="/account">
                   <img

@@ -100,6 +100,16 @@
   border-radius: 4px;
   background: #0d0d0d;
 }
+@media screen and (min-width: 768px) {
+  .loader-container {
+    height: 466px;
+    flex-shrink: 0;
+    border-radius: 8px;
+  }
+  .loader-card {
+    margin-top: 30px;
+  }
+}
 .poster-failure-image {
   width: 24px;
   height: 24px;

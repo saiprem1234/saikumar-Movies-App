@@ -34,7 +34,6 @@ class TrendingSection extends Component {
       },
     }
     const response = await fetch(url, options)
-    console.log(response.ok)
     if (response.ok === true) {
       const data = await response.json()
       const formattedData = data.results.map(eachMovie => ({
