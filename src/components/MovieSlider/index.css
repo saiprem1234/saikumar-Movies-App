@@ -10,11 +10,6 @@
   outline: 2px solid #fff;
   margin-top: 10px;
 }
-.thumbnail:hover {
-  -ms-transform: scale(1.1);
-  -webkit-transform: scale(1.5);
-  transform: scale(1.1);
-}
 
 @media screen and (min-width: 768px) {
   .thumbnail-image-card {

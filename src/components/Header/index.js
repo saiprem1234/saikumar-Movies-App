@@ -29,6 +29,18 @@ class Header extends Component {
     }))
   }
 
+  onEnterSearch = event => {
+    const {getSearchData} = this.props
+    if (event.key === 'Enter') {
+      getSearchData()
+    }
+  }
+
+  onSearch = () => {
+    const {getSearchData} = this.props
+    getSearchData()
+  }
+
   render() {
     const {showOptions, currentPath} = this.state
     const {searchInput} = this.props
@@ -58,17 +70,10 @@ class Header extends Component {
               </ul>
             </div>
             <ul className="nav-items-list">
-              {currentPath === '/' ? (
-                <li>
-                  <Link to="/search">
-                    <button className="search-icon-button" type="button">
-                      <HiOutlineSearch size={20} />
-                    </button>
-                  </Link>
-                </li>
-              ) : (
+              {currentPath === '/search' ? (
                 <li className="search-input-container">
                   <input
+                    onKeyDown={this.onEnterSearch}
                     type="search"
                     placeholder="Search"
                     className="search-input"
@@ -76,12 +81,25 @@ class Header extends Component {
                     value={searchInput}
                   />
                   <button
+                    onClick={this.onSearch}
                     testid="searchButton"
                     className="search-input-icon-button"
                     type="button"
                   >
                     <HiOutlineSearch className="search-image" size={16} />
                   </button>
+                </li>
+              ) : (
+                <li>
+                  <Link to="/search">
+                    <button
+                      onClick={this.onClickSearch}
+                      className="search-icon-button"
+                      type="button"
+                    >
+                      <HiOutlineSearch size={20} />
+                    </button>
+                  </Link>
                 </li>
               )}
               <li className="avatar-container">

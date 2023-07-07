@@ -1,0 +1,24 @@
+.movie-item-image {
+  width: 84px;
+  height: 150px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  outline: 2px solid #fff;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+.movie-item-image:hover {
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.1);
+}
+@media screen and (min-width: 768px) {
+  .movie-item-image {
+    width: 220px;
+    height: 350px;
+    padding: 8px;
+    border-radius: 15px;
+    flex-shrink: 0;
+    margin-bottom: 30px;
+  }
+}
