@@ -1,0 +1,91 @@
+.not-found-container {
+  background: linear-gradient(180deg, #4368eb 0%, rgba(164, 184, 255, 0) 100%),
+    url('https://res.cloudinary.com/dpoyt9wp0/image/upload/v1688807046/snow-removal-machine-working-high-ski-slope-snowstorm_454047-2149_1_1_gk9hav.png'),
+    lightgray 50% / cover no-repeat;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+}
+@media screen and (min-width: 768px) {
+  .not-found-container {
+    background: linear-gradient(180deg, #4368eb 0%, rgba(164, 184, 255, 0) 100%),
+      url('https://res.cloudinary.com/dpoyt9wp0/image/upload/v1688808721/snow-removal-machine-working-high-ski-slope-snowstorm_454047-2149_1_tccbas.png'),
+      lightgray 50% / cover no-repeat;
+    background-size: cover;
+  }
+}
+.not-found-content {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.not-found-title {
+  color: #fff;
+  font-family: 'Roboto';
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+@media screen and (min-width: 768px) {
+  .not-found-title {
+    font-size: 96px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .not-found-title-description {
+    display: flex;
+    width: 296px;
+    flex-direction: column;
+    flex-shrink: 0;
+    color: #fff;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+}
+@media screen and (min-width: 768px) {
+  .not-found-title-description {
+    display: flex;
+    width: 610px;
+    flex-direction: column;
+    flex-shrink: 0;
+    color: #fff;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+}
+
+.not-found-button {
+  display: flex;
+  padding: 8px 24px;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  border-radius: 4px;
+  background: #fff;
+  color: var(--general-dark-blue, #171f46);
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  border: none;
+}
+.link {
+  text-decoration: none;
+}
