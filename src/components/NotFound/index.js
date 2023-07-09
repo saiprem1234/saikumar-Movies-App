@@ -2,7 +2,7 @@ import {Link} from 'react-router-dom'
 import './index.css'
 
 const NotFound = () => (
-  <div className="not-found-container" alt="not found">
+  <div className="not-found-container">
     <div className="not-found-content">
       <h1 className="not-found-title">Lost Your Way ?</h1>
       <p className="not-found-title-description">

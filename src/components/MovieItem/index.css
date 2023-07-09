@@ -22,3 +22,7 @@
     margin-bottom: 30px;
   }
 }
+.movie-item-image-button {
+  background-color: transparent;
+  border: none;
+}
