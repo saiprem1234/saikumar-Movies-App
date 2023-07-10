@@ -84,6 +84,7 @@ class Header extends Component {
                     onClick={this.onSearch}
                     className="search-input-icon-button"
                     type="button"
+                    testid="searchButton"
                   >
                     <HiOutlineSearch className="search-image" size={16} />
                   </button>
