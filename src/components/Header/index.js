@@ -53,7 +53,7 @@ class Header extends Component {
                 <img
                   src="https://res.cloudinary.com/dpoyt9wp0/image/upload/v1688382078/Group_7399_p2tymc.svg"
                   className="website-logo"
-                  alt="login website logo"
+                  alt="website logo"
                 />
               </Link>
               <ul className="options-card">
@@ -96,6 +96,7 @@ class Header extends Component {
                       onClick={this.onClickSearch}
                       className="search-icon-button"
                       type="button"
+                      testid="searchButton"
                     >
                       <HiOutlineSearch size={20} />
                     </button>
