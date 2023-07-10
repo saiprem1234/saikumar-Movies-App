@@ -82,7 +82,6 @@ class Header extends Component {
                   />
                   <button
                     onClick={this.onSearch}
-                    testid="searchButton"
                     className="search-input-icon-button"
                     type="button"
                   >
