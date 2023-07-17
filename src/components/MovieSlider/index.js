@@ -9,6 +9,7 @@ import './index.css'
 const MovieSlider = props => {
   const settings = {
     dots: false,
+    infinite: false,
     slidesToShow: 4,
     slidesToScroll: 1,
     responsive: [
